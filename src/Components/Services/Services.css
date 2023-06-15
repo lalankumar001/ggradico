@@ -1,0 +1,45 @@
+.Services_heading{
+    text-align: center;
+    font-size: 50px ;
+    font-weight: bolder;
+    color: white;
+    padding: 6%;
+    scroll-behavior: smooth;
+}
+.Services_p{
+    color: aqua;
+    margin-left: 18%;
+    display: flex;
+    position: relative;
+    padding: 10%;
+    margin-top: -13%;
+}
+/* Services section img part css here */
+.WebDev_service_img{
+    box-shadow: 1rem;
+}
+.WebDev_services{
+  position: relative;
+  overflow: auto;
+  background-color: rebeccapurple;
+  margin-left: -10%;    
+}
+
+
+
+
+
+@media (max-width:720px){
+    .WebDev_service_img img{
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+    .WebDev_services{
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+    }
+
+}
