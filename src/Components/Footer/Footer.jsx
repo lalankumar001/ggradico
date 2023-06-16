@@ -118,12 +118,12 @@ const Footer = () => {
                   <MdWhatsapp />{" "}
                 </i>{" "}
                 <a
-                  href="https://wa.me/8860130800"
+                  href="https://wa.me/9896549691"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-decoration-none text-dark"
                 >
-                  +91 8860130800{" "}
+                  +91 9896549691{" "}
                 </a>
               </p>
               <p>

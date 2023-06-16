@@ -2,16 +2,16 @@ import React from "react";
 import "bootstrap/dist/js/bootstrap.bundle";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/GradicoLogo.png";
+import Logo from "../../assets/ggradico-logo.png";
 
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-warning shadow fixed-top">
+      <nav className="navbar navbar-expand-lg bg-white shadow fixed-top">
         <div className="container-fluid">
           <Link to="/home" className="navbar-brand"></Link>
           <Link to="/home">
-            <img src={Logo} alt="Logo" width='140' height='90' />
+            <img src={Logo} alt="Logo" width='100%' height='80' />
           </Link>
           <button
             className="navbar-toggler"
@@ -39,6 +39,14 @@ const Navbar = () => {
             </div>
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-5 fw-semibold fs-4 pt-3">  
+              <li className="nav-item btn btn- fs-5">
+                 <Link  to='/home'
+                    activeClassName="menu_active"
+                    className="nav-link"
+                  >
+                    Home
+                   </Link>
+                </li>
                 <li className="nav-item">
                   <a
                     activeClassName="menu_active"
@@ -75,10 +83,10 @@ const Navbar = () => {
                 </li>
 
                 <li className="nav-item">
-                  <Link
+                  <a
                     activeClassName="menu_active"
                     className="nav-link text-dark"
-                    to="/About"
+                    
                   >
                     <div className="dropdown">
                       <button
@@ -91,58 +99,58 @@ const Navbar = () => {
                       </button>
                       <ul className="dropdown-menu">
                         <li>
-                          <a className="dropdown-item" href="#">
+                          <Link to='/work_web_dev' className="dropdown-item" href="#">
                             Web Development
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                          <Link to='/work_custom_web_dev' className="dropdown-item" href="#">
                           Custom Web Development
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                          <Link to='/work_web_design' className="dropdown-item" href="#">
                             Web Designing
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                          <Link to='/work_digital_marketing' className="dropdown-item" href="#">
                             Digital Marketing
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                          <Link to='/work_seo' className="dropdown-item" href="#">
                             Social Media Optimization 
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                          <Link to='/work_ppc' className="dropdown-item" href="#">
                            Pay Per Click (PPC)
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                          <Link to='/work_cyber_security' className="dropdown-item" href="#">
                             Cyber Security & Ethical Hacking
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                          <Link to='/work_it_consultant' className="dropdown-item" href="#">
                           IT Consultant Services
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                          <Link to='/work_abroad_education' className="dropdown-item" href="#">
                           Abroad Education Consultancy
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a className="dropdown-item" href="#">
+                          <Link to='/work_data_recovery' className="dropdown-item" href="#">
                          Data Recovery
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
-                  </Link>
+                  </a>
                 </li>
 
                 <li className="nav-item">

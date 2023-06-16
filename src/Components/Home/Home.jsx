@@ -17,7 +17,8 @@ import './Home.css'
 const Home = () => {
 
   return (
-    <div>
+    // Home_page_media is used for responsive and all code in app.css file
+    <div className='Home_page_media'>
 {/* MINI NAVBAR ON HOME HERO SECTION  */}
       <div className='MiniNavbar'>
         <MiniNavbar />

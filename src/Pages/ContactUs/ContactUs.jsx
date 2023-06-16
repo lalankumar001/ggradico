@@ -5,7 +5,8 @@ import './ContactUs.css'
 const ContactUs = () => {
   
   return (
-    <div className='mt-5 p-3'>
+    // contactUs_page class is used for responsive and all code in app.css file
+    <div className='mt-5 p-3 contactUs_page'>
         <div className="container mt-5 shadow ">
         <div className="row ">
             <div className="col-md-4 bg-primary p-5 text-white order-sm-first order-last">

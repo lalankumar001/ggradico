@@ -5,7 +5,8 @@ import ContactUs from '../ContactUs/ContactUs'
 
 const Blog = () => {
   return (
-    <div>
+    // Blog page class in used for responsive and all css in app.css file
+    <div className='BlogPage'>
       <br />
       <br />
       <div className='mt-5'>

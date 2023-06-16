@@ -1,3 +1,47 @@
 *{
   font-family: 'Libre Baskerville', serif;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+/* All Media Queries code here */
+
+@media (min-width: 576px) and (max-width: 992px){
+
+  /* Home page Media query */
+.Home_page_media{
+  width: 100%;
+  height: auto;
+  padding: 0%;
+}
+.MiniNavbar{
+display: none;
+}
+ /* Carrer page media query*/
+  .CarrerPage{
+    width: 100%;
+    height: auto;
+    padding: auto;
+  }
+  /* Contact us page */
+  .contactUs_page{
+    width: 100%;
+    height: auto;
+    display: inline;
+  }
+  .contactUs_page p{
+    font-size: 15px;
+  }
+  /* Blog Page */
+  .BlogPage{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+  }
+  .BlogPage .container{
+    width: 100%;
+    height: auto;
+    display: inline;
+  }
 }

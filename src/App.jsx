@@ -23,6 +23,15 @@ import OurTeam from './Pages/WhoWeAre/OurTeam/OurTeam';
 import Testimonials from './Pages/WhoWeAre/Testimonials/Testimonials';
 
 // What We Do section all components imported here
+import WebDevelopment from './Pages/WhatWeDo/WebDevelopment/WebDevelopment';
+import CustomWebDev from './Pages/WhatWeDo/CustomWebDev/CustomWebDev';
+import WebDesign from './Pages/WhatWeDo/WebDesign/WebDesign'
+import DigitalMarketing from './Pages/WhatWeDo/DigitalMarketing/DigitalMarketing'
+import PayPerClick from './Pages/WhatWeDo/PayPerClick/PayPerClick'
+import SEO from './Pages/WhatWeDo/SEO/Seo'
+import CyberSecurity from './Pages/WhatWeDo/CyberSecurity/CyberSecurity';
+import ItConsultant from './Pages/WhatWeDo/ItConsultant/ItConsultant';
+import AbroadEducation from './Pages/WhatWeDo/AbroadEducation/AbroadEducation';
 
 // Courses section all components imported here 
 
@@ -37,6 +46,8 @@ import ContactUs from './Pages/ContactUs/ContactUs'
 
 
 import './App.css'
+import DataRecovery from './Pages/WhatWeDo/DataRecovery/DataRecovery';
+
 
 function App() {
 
@@ -52,6 +63,16 @@ function App() {
                       <Route exact path="/testimonials" Component={Testimonials}/> 
 
 {/* What we do section routes here */}
+<Route exact path="/work_web_dev" Component={WebDevelopment}/> 
+<Route exact path="/work_custom_web_dev" Component={CustomWebDev}/> 
+<Route exact path="/work_web_design" Component={WebDesign}/> 
+<Route exact path="/work_digital_marketing" Component={DigitalMarketing}/> 
+<Route exact path="/work_seo" Component={SEO}/> 
+<Route exact path="/work_ppc" Component={PayPerClick}/> 
+<Route exact path="/work_cyber_security" Component={CyberSecurity}/> 
+<Route exact path="/work_it_consultant" Component={ItConsultant}/> 
+<Route exact path="/work_abroad_education" Component={AbroadEducation}/> 
+<Route exact path="/work_data_recovery" Component={DataRecovery}/> 
 
 {/* Courses section routes here */}
 
@@ -68,7 +89,7 @@ function App() {
 
       <div className='flex fixed-bottom'>
         <button className="btn btn-success btn-lg mx-2 mb-2">
-        <a href="https://wa.me/8860130800"  className='btn btn-success shadow' target="_blank" rel="noopener noreferrer">  <i className="fab fa-whatsapp mr-2"></i> <span className='fs-3'> <MdWhatsapp /> </span></a>
+        <a href="https://wa.me/9896549691"  className='btn btn-success shadow' target="_blank" rel="noopener noreferrer">  <i className="fab fa-whatsapp mr-2"></i> <span className='fs-3'> <MdWhatsapp /> </span></a>
         </button>
         </div>
       <Footer />

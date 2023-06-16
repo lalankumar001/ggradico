@@ -13,58 +13,59 @@ import './CareerPage.css'
 const CareerPage = () => {
   const jobOpenings = [
     {
-      title: 'ReactJS Developer',
-      description: 'We are looking for an experienced ReactJS developer to join our team.',
+      title: 'Full Stack Developer',
+      description: 'As a Full Stack Developer, you will play a crucial role in developing and maintaining both the front-end and back-end.',
       Qualifications: 'Bachelors degree in Computer Science, Web Development, or related field',
-      Skills:'Thorough understanding of HTML, CSS, JavaScript, Tailwind, and Reactjs (preferred)',
-      location:'Remote',
-      Experience:'3 Years To 6 Years',
-      applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfpGDwHJYLKL4XUtUT-dEB3--YwL0VChJfm2cmCG7RZRPI8ww/viewform?usp=sf_link'
+      Skills:'Proficiency in HTML, CSS, JavaScript, React, Angular, Vue.js, Node.js, Python, Ruby, Express, Django, Ruby on Rails..',
+      location:'Office',
+      Experience:'1 Years To 5 Years',
+      applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc2XMpkbLzlEtsmIoLnkJearbQxZcFGCFq3koPusHReBGBEBg/viewform?usp=sf_link'
     },
     {
       title: 'Frontend Developer',
       description: 'We are seeking a frontend developer with expertise in ReactJS to work on our client-side web applications.',
       Qualifications: 'Bachelors degree in Computer Science, Web Development, or related field',
       Skills:'Thorough understanding of HTML, CSS, JavaScript, Tailwind, and Reactjs (preferred)',
-     location:'Remote',
-     Experience:'3 Years To 6 Years',
-     applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfpGDwHJYLKL4XUtUT-dEB3--YwL0VChJfm2cmCG7RZRPI8ww/viewform?usp=sf_link'
+     location:'Office',
+     Experience:'0 Years To 3 Years',
+     applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc2XMpkbLzlEtsmIoLnkJearbQxZcFGCFq3koPusHReBGBEBg/viewform?usp=sf_link'
     },
     {
       title: 'Backend Developer',
-      description: 'We are seeking a frontend developer with expertise in ReactJS to work on our client-side web applications.',
+      description: 'As a Back-End Developer, you will be responsible for building and maintaining the server-side logic of web applications.',
       Qualifications: 'Bachelors degree in Computer Science, Web Development, or related field',
-      Skills:'Thorough understanding of HTML, CSS, JavaScript, Tailwind, and Reactjs (preferred)',
-     location:'Remote',
+      Skills:'Developing server-side applications and APIs using back-end languages such as Python, Java, PHP, or Node.js.',
+     location:'Office',
      Experience:'3 Years To 6 Years',
-     applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfpGDwHJYLKL4XUtUT-dEB3--YwL0VChJfm2cmCG7RZRPI8ww/viewform?usp=sf_link'
+     applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc2XMpkbLzlEtsmIoLnkJearbQxZcFGCFq3koPusHReBGBEBg/viewform?usp=sf_link'
     },
     {
       title: 'Search engine optimization [SEO]',
-      description: 'We are seeking a frontend developer with expertise in ReactJS to work on our client-side web applications.',
+      description: 'As an SEO Specialist, you will play a critical role in improving the visibility and organic search rankings of websites.',
       Qualifications: 'Bachelors degree in Computer Science, Web Development, or related field',
-      Skills:'Thorough understanding of HTML, CSS, JavaScript, Tailwind, and Reactjs (preferred)',
-      location:'Remote',
-      Experience:'3 Years To 6 Years',
-      applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfpGDwHJYLKL4XUtUT-dEB3--YwL0VChJfm2cmCG7RZRPI8ww/viewform?usp=sf_link'
+      Skills:'Proficiency in SEO tools and platforms such as Google Analytics, Google Search Console, and keyword research tools.',
+      location:'Office',
+      Experience:'1 Years To 4 Years',
+      applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc2XMpkbLzlEtsmIoLnkJearbQxZcFGCFq3koPusHReBGBEBg/viewform?usp=sf_link'
     },
     {
-      title: 'Java Developer',
-      description: 'We are seeking a frontend developer with expertise in ReactJS to work on our client-side web applications.',
+      title: 'Digital Marketing',
+      description: 'As a Digital Marketing Specialist, you will be responsible for planning, implementing, and optimizing digital marketing campaigns to drive brand awareness, website traffic, and customer engagement. ',
       Qualifications: 'Bachelors degree in Computer Science, Web Development, or related field',
-      Skills:'Thorough understanding of HTML, CSS, JavaScript, Tailwind, and Reactjs (preferred)',
-     location:'Remote',
+      Skills:'In-depth knowledge of digital marketing principles, strategies, and best practices. Proficiency in digital marketing tools and platforms, such as Google Analytics, Google Ads, social media management tools, and email marketing software.',
+     location:'Office',
      Experience:'3 Years To 6 Years',
-     applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfpGDwHJYLKL4XUtUT-dEB3--YwL0VChJfm2cmCG7RZRPI8ww/viewform?usp=sf_link'
+     applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc2XMpkbLzlEtsmIoLnkJearbQxZcFGCFq3koPusHReBGBEBg/viewform?usp=sf_link'
     }
     // Add more job openings here as needed
   ];
   
   return (
-    <div>
+    // CarrerPage class name is used for responsive
+    <div className='CarrerPage'>
       <div className='mt-5'>
          <div>
-          <img src={HiringImg} alt="img" width='100%' />
+          <img src={HiringImg} alt="img" width='100%' height='100%' />
          </div> 
          <h1 className="Open_Vacance_Heading container w-75 text-center text-light fw-bold p-1 bg-dark rounded">
          <span><img src={VacantChairs} alt="img" width='100%' className='rounded'/></span>
