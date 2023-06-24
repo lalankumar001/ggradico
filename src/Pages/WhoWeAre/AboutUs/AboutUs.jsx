@@ -14,13 +14,27 @@ import OurTeam from "../OurTeam/OurTeam";
 const AboutUs = () => {
   return (
     <div>
-      <div className="mt-5 bg-primary">
+      <div className="mt-5">
         <div>
           <img src={Aboutus} alt="img" width="100%" />
         </div>
         <h1 className="Open_Vacance_Heading container w-50 text-center text-light fw-bold p-4 bg-dark rounded">
           About Us
         </h1>
+          {/* About */}
+           <div className="p-3">
+           <span className="text-dark fw-semibold">
+            {" "}
+            <p className="mx-5 my-2">
+             " At Gradico global Management and Services Pvt.Ltd , we understand the demands of today's fast-paced
+              world, where efficiency and productivity are paramount. That's why
+              we have assembled a team of skilled professionals who possess a
+              diverse range of talents and expertise. Whether it's project
+              management, administrative support, creative design, or technical
+              assistance, we have the skills and resources to handle it all. "
+            </p>
+          </span>
+           </div>
         <br />
 
         <div className="container">
@@ -89,29 +103,9 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-
-        {/* About  */}
-        <hr />
-        <div className="bg-danger p-4">
-          <h1 className="text-dark fw-bold p-4 mt-3">
-            <span className=" text-decoration-underline fs-1 fw-bold">Ab</span>
-            out
-          </h1>
-          <span className="text-dark fw-semibold">
-            {" "}
-            <p className="mx-5 my-2">
-             " At Gradico global Management and Services Pvt.Ltd , we understand the demands of today's fast-paced
-              world, where efficiency and productivity are paramount. That's why
-              we have assembled a team of skilled professionals who possess a
-              diverse range of talents and expertise. Whether it's project
-              management, administrative support, creative design, or technical
-              assistance, we have the skills and resources to handle it all. "
-            </p>
-          </span>
-        </div>
         {/* Our Working Process */}
-        <div className="Working_process bg-primary">
-          <h1 className="text-white text-center p-4 fw-bold">
+        <div className="Working_process">
+          <h1>
             Our Working Process
           </h1>
           <div className="Planing">

@@ -1,6 +1,32 @@
-.Services_Heading{
-    margin-top: -3%;
-    position: relative;
-    overflow: auto;
+.Hero_page{
+ margin-top: 7%;
+ margin-bottom: 1%;
 }
 
+.slider p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: -20%;
+}
+
+.Web_dev_Icons:hover{
+     font-size: 30px;
+}
+.Working_Process{
+    background-color: aliceblue;
+    padding: 0%;
+}
+/* find us section */
+.FindUs{
+ background-image: url('../../assets/HeroPageImg/BackgrounIMg.png');
+ filter: blur(10%);
+}
+.Office_address{
+    color: black;
+    margin-top: -35%;
+    margin-left: 8%;   
+    position: absolute;
+}

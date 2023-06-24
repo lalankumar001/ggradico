@@ -70,17 +70,18 @@ const Home = () => {
 <Services />
 </div>
 <br />
-{/* Client Testimonial section after Services */}
- <hr />
- <div className='bg-dark'>
- <Testimonials />
- </div>
-<br />
-<hr />
 {/* tech we use */}
 <div>
   <TechweUseHome />
 </div>
+{/* Client Testimonial section after Services */}
+ <hr />
+ <div className='bg-'>
+ <Testimonials />
+ </div>
+<br />
+<hr />
+
 
 {/* get in touch after carousel section */}
        <div className='Get_in_touch mt-3 p-5'>

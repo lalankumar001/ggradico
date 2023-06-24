@@ -1,0 +1,23 @@
+.WordpressWebDev{
+    background-color: rgb(218, 211, 202);
+}
+.CustomWebDev{
+    background-color: rgb(209, 159, 221);
+}
+.CmsWebDev{
+    background-color: aquamarine;
+}
+.eCommWebDev{
+    background-color: rgb(63, 155, 155);
+}
+.MernWebDev{
+    background-color: bisque;
+}
+
+/* below css use for merge backgrond color into img backgroun color */
+.ForWordpressImgBg{
+    mix-blend-mode: multiply;
+}
+.ForMernImgBackground{
+    mix-blend-mode: multiply;
+}

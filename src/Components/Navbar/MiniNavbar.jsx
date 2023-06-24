@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaUsers ,FaSearchLocation,FaDonate} from "react-icons/fa";
+import {FaSearchLocation,FaDonate} from "react-icons/fa";
 import { MdOutlineComputer, MdOutlineDiversity2,MdOutlinePhonelink } from "react-icons/md";
 
 const MiniNavbar = () => {

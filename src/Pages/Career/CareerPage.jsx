@@ -1,5 +1,5 @@
 import React from 'react'
-import HiringImg from '../../assets/HiringImg.jpg'
+import HiringImg from '../../assets/WeAreHiring.gif'
 import VacantChairs from '../../assets/VacantChairs.jpg'
 // reactIcons 
 import { MdLocationOn ,MdOutlineBarChart} from "react-icons/md";

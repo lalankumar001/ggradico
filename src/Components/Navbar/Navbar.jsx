@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/js/bootstrap.bundle";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/ggradico-logo.png";
+import Logo from "../../assets/GgradicoLogo.png";
 
 const Navbar = () => {
   return (
@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="container-fluid">
           <Link to="/home" className="navbar-brand"></Link>
           <Link to="/home">
-            <img src={Logo} alt="Logo" width='100%' height='80' />
+            <img src={Logo} alt="Logo" width='130%' height='85' />
           </Link>
           <button
             className="navbar-toggler"
@@ -101,11 +101,6 @@ const Navbar = () => {
                         <li>
                           <Link to='/work_web_dev' className="dropdown-item" href="#">
                             Web Development
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to='/work_custom_web_dev' className="dropdown-item" href="#">
-                          Custom Web Development
                           </Link>
                         </li>
                         <li>

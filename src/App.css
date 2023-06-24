@@ -18,6 +18,81 @@
 .MiniNavbar{
 display: none;
 }
+/* Home page Services section media query */
+.Services_page{  
+  display: block;
+  width: 100%;
+  height: auto;
+}    
+
+.Services_page h1{
+  width: 100%;
+  height: auto;
+  padding-top: 4%;
+  margin: 0% 2%;
+  font-size: 23px;
+  text-align: center;
+}
+.Services_page p{
+  font-size: 10px;
+  padding: auto;
+}
+/* Services page Web Dev section */
+.Web_Development{
+  width: 100%;
+  display: flex;
+  padding: 3%;
+  margin: 0% 30%;
+   justify-content: center;
+ 
+}
+.Web_Development img{
+  display: none;
+}
+
+.Web_Development .row{
+  width: 100%;
+  display:block;
+  justify-content: center;
+  scroll-behavior: smooth;
+
+}
+
+/* Web Designing section */
+.Web_Designing{
+  width: 100%;
+  display: flex;
+  padding: 3%;
+  margin: 0% 30%;
+   justify-content: center;
+}
+.Web_Designing .row{
+  width: 100%;
+  display:block;
+  justify-content: center;
+  scroll-behavior: smooth;
+
+}
+.Web_Designing img{
+  display: none;
+}
+/* Cyber Security section */
+.Cyber_security{
+  width: 100%;
+  display: flex;
+  padding: 3%;
+  margin: 0% 30%;
+   justify-content: center;
+}
+.Cyber_security img{
+  display: none;
+}
+.Cyber_security .row{
+  width: 100%;
+  display:block;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
  /* Carrer page media query*/
   .CarrerPage{
     width: 100%;
