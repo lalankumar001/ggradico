@@ -29,16 +29,16 @@ const Footer = () => {
               </p>
               <div className="footer-icons">
                 <i className="fa-brands fa-facebook">
-                  <FaFacebook />{" "}
+                 <a href="https://www.facebook.com/profile.php?id=100094073347799&is_tour_dismissed=true" target="_blank"><FaFacebook /></a>
                 </i>
                 <i className="fa-brands fa-twitter">
-                  <FaTwitter />{" "}
+                 <a href="https://twitter.com/gradico1797" target="_blank"><FaTwitter /></a>
                 </i>
                 <i className="fa-brands fa-instagram">
-                  <FaInstagram />{" "}
+                 <a href="https://instagram.com/ggradicoca?igshid=NGExMmI2YTkyZg==" target="_blank"><FaInstagram /></a>
                 </i>
-                <i className="fa-brands fa-linkedin-in">
-                  <FaLinkedinIn />{" "}
+                <i className="fa-brands fa-linkedin">
+                 <a href="https://www.linkedin.com/in/gradico-global-1720a3281/" target="_blank"><FaLinkedinIn /></a>
                 </i>
               </div>
             </div>
@@ -47,17 +47,17 @@ const Footer = () => {
               <h5 className="text-primary fw-semibold">About Company</h5>
               <ul>
                 <li className="nav-item">
-                  <a className="" href="/">
+                  <a className="" href="/about_us">
                     About
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="" href="/">
+                  <a className="" href="/testimonials">
                     Testimonial
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="" href="/">
+                  <a className="" href="/our_team">
                     Our Team
                   </a>
                 </li>
@@ -67,7 +67,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="" href="/">
+                  <a className="" href="/privacy">
                     Privacy Policy
                   </a>
                 </li>
@@ -78,27 +78,27 @@ const Footer = () => {
               <h5 className="text-primary fw-semibold">Our Services</h5>
               <ul>
                 <li className="nav-item">
-                  <a className="" href="/">
+                  <a className="" href="/work_web_dev">
                     Website Development
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="" href="/">
+                  <a className="" href="/work_web_design">
                     Website Design
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="" href="/">
-                    Search Engine Optimization
+                  <a className="" href="/work_smo">
+                    Social Media Optimization
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="" href="/">
+                  <a className="" href="/work_ppc">
                     Pay per Click
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="" href="/">
+                  <a className="" href="/work_abroad_education">
                     Abroad Education Consultancy
                   </a>
                 </li>

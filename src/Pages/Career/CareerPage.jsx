@@ -19,7 +19,7 @@ const CareerPage = () => {
       Skills:'Proficiency in HTML, CSS, JavaScript, React, Angular, Vue.js, Node.js, Python, Ruby, Express, Django, Ruby on Rails..',
       location:'Office',
       Experience:'1 Years To 5 Years',
-      applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc2XMpkbLzlEtsmIoLnkJearbQxZcFGCFq3koPusHReBGBEBg/viewform?usp=sf_link'
+      applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfypopYsVfCkLbVYWFA4c-8XXzS230cVdzpMIrIhZNxPLN4nA/viewform?usp=sf_link'
     },
     {
       title: 'Frontend Developer',
@@ -28,7 +28,7 @@ const CareerPage = () => {
       Skills:'Thorough understanding of HTML, CSS, JavaScript, Tailwind, and Reactjs (preferred)',
      location:'Office',
      Experience:'0 Years To 3 Years',
-     applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc2XMpkbLzlEtsmIoLnkJearbQxZcFGCFq3koPusHReBGBEBg/viewform?usp=sf_link'
+     applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfypopYsVfCkLbVYWFA4c-8XXzS230cVdzpMIrIhZNxPLN4nA/viewform?usp=sf_link'
     },
     {
       title: 'Backend Developer',
@@ -37,7 +37,7 @@ const CareerPage = () => {
       Skills:'Developing server-side applications and APIs using back-end languages such as Python, Java, PHP, or Node.js.',
      location:'Office',
      Experience:'3 Years To 6 Years',
-     applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc2XMpkbLzlEtsmIoLnkJearbQxZcFGCFq3koPusHReBGBEBg/viewform?usp=sf_link'
+     applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfypopYsVfCkLbVYWFA4c-8XXzS230cVdzpMIrIhZNxPLN4nA/viewform?usp=sf_link'
     },
     {
       title: 'Search engine optimization [SEO]',
@@ -46,7 +46,7 @@ const CareerPage = () => {
       Skills:'Proficiency in SEO tools and platforms such as Google Analytics, Google Search Console, and keyword research tools.',
       location:'Office',
       Experience:'1 Years To 4 Years',
-      applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc2XMpkbLzlEtsmIoLnkJearbQxZcFGCFq3koPusHReBGBEBg/viewform?usp=sf_link'
+      applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfypopYsVfCkLbVYWFA4c-8XXzS230cVdzpMIrIhZNxPLN4nA/viewform?usp=sf_link'
     },
     {
       title: 'Digital Marketing',
@@ -55,7 +55,7 @@ const CareerPage = () => {
       Skills:'In-depth knowledge of digital marketing principles, strategies, and best practices. Proficiency in digital marketing tools and platforms, such as Google Analytics, Google Ads, social media management tools, and email marketing software.',
      location:'Office',
      Experience:'3 Years To 6 Years',
-     applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSc2XMpkbLzlEtsmIoLnkJearbQxZcFGCFq3koPusHReBGBEBg/viewform?usp=sf_link'
+     applyLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfypopYsVfCkLbVYWFA4c-8XXzS230cVdzpMIrIhZNxPLN4nA/viewform?usp=sf_link'
     }
     // Add more job openings here as needed
   ];

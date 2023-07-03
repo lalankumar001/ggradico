@@ -58,19 +58,19 @@ const WebDevelopment = () => {
                 eb Development
               </a>
               <nav className="nav nav-pills flex-column">
-                <a className="nav-link ms-3 my-1" href="#item-1-1">
+                <a className="nav-link ms-3 my-1 btn btn-dark" href="#item-1-1">
                   Wordpress Web Development
                 </a>
-                <a className="nav-link ms-3 my-1" href="#item-1-2">
+                <a className="nav-link ms-3 my-1 btn btn-dark" href="#item-1-2">
                   Custom Web Development
                 </a>
-                <a className="nav-link ms-3 my-1" href="#item-1-3">
+                <a className="nav-link ms-3 my-1 btn btn-dark" href="#item-1-3">
                   CMS Web Development
                 </a>
-                <a className="nav-link ms-3 my-1" href="#item-1-4">
+                <a className="nav-link ms-3 my-1 btn btn-dark" href="#item-1-4">
                   eCommerce Web Development
                 </a>
-                <a className="nav-link ms-3 my-1" href="#item-1-5">
+                <a className="nav-link ms-3 my-1 btn btn-dark" href="#item-1-5">
                   Full Stack Web Development
                 </a>
               </nav>
@@ -958,84 +958,84 @@ const WebDevelopment = () => {
             <div className="container  p-3 fw-bold fs-2 mb-2">
               <div className="row">
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="HTML">
                     <FaHtml5 />
                   </span>
                 </div>
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="CSS">
                     <FaCss3Alt />
                   </span>
                 </div>
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="JavaScript">
                     <FaJsSquare />
                   </span>
                 </div>
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="Reactjs">
                     <FaReact />
                   </span>
                 </div>
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="NodeJs">
                     <FaNodeJs />
                   </span>
                 </div>
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="Bootstrap">
                     <FaBootstrap />
                   </span>
                 </div>
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="Sass">
                     <FaSass />
                   </span>
                 </div>
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="Wordpress">
                     <FaWordpress />
                   </span>
                 </div>
               </div>
               <div className="row my-3">
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="Java">
                     <FaJava />
                   </span>
                 </div>
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="Php"> 
                     <FaPhp />
                   </span>
                 </div>
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="Laravel">
                     <FaLaravel />
                   </span>
                 </div>
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="Tailwindcss">
                     <SiTailwindcss />
                   </span>
                 </div>
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="Mysql">
                     <SiMysql />
                   </span>
                 </div>
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="Mongodb">
                     <SiMongodb />
                   </span>
                 </div>
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="Material UI">
                     <SiMui />
                   </span>
                 </div>
                 <div className="col">
-                  <span className="shadow rounded-pill p-2">
+                  <span className="shadow rounded-pill p-2" title="Firebase">
                     <SiFirebase />
                   </span>
                 </div>

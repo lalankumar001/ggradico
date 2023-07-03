@@ -114,7 +114,7 @@ const Navbar = () => {
                           </Link>
                         </li>
                         <li>
-                          <Link to='/work_seo' className="dropdown-item" href="#">
+                          <Link to='/work_smo' className="dropdown-item" href="#">
                             Social Media Optimization 
                           </Link>
                         </li>

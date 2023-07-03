@@ -1,0 +1,40 @@
+.WebDesignHero{
+ background-color: rgb(253, 251, 251);
+}
+.WebDesignHero img{
+    mix-blend-mode: multiply;
+}
+
+/* Website Redesign Section */
+.WebRedesign{
+    background-color: rgb(38, 176, 130);
+}
+.ForWebRedesignImgBg{
+    mix-blend-mode: multiply;
+}
+/* Icons classname is used for tech we use section icons */
+.icons:hover{
+  color: black;
+  transform: rotate(0.1turn);
+}
+/* CMS websit designing Section */
+.CmsWebDesign{
+    background-color: rgb(74, 195, 195);
+}
+.ForCmsImgBackground{
+    mix-blend-mode: multiply;
+}
+/* Website Converting Section */
+.WebConverting{
+    background-color:rgb(254, 255, 255);
+}
+.ForWebConvertingImgBackground{
+    mix-blend-mode: multiply;
+}
+/* dynamic web design section */
+.DynamicWebDesign{
+    background-color: red;
+}
+.ForDynamicImgBackground{
+    mix-blend-mode: multiply;
+}

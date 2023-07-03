@@ -28,10 +28,11 @@ import CustomWebDev from './Pages/WhatWeDo/CustomWebDev/CustomWebDev';
 import WebDesign from './Pages/WhatWeDo/WebDesign/WebDesign'
 import DigitalMarketing from './Pages/WhatWeDo/DigitalMarketing/DigitalMarketing'
 import PayPerClick from './Pages/WhatWeDo/PayPerClick/PayPerClick'
-import SEO from './Pages/WhatWeDo/SEO/Seo'
 import CyberSecurity from './Pages/WhatWeDo/CyberSecurity/CyberSecurity';
 import ItConsultant from './Pages/WhatWeDo/ItConsultant/ItConsultant';
 import AbroadEducation from './Pages/WhatWeDo/AbroadEducation/AbroadEducation';
+import DataRecovery from './Pages/WhatWeDo/DataRecovery/DataRecovery';
+import Smo from './Pages/WhatWeDo/SEO/Smo';
 
 // Courses section all components imported here 
 
@@ -44,9 +45,12 @@ import Blog from './Pages/Blog/Blog'
 //Contact section components imported here
 import ContactUs from './Pages/ContactUs/ContactUs'
 
+// Privacy section components imported here
+import Privacy from './Components/Privacy/Privacy'
+
 
 import './App.css'
-import DataRecovery from './Pages/WhatWeDo/DataRecovery/DataRecovery';
+
 
 
 function App() {
@@ -67,7 +71,7 @@ function App() {
 <Route exact path="/work_custom_web_dev" Component={CustomWebDev}/> 
 <Route exact path="/work_web_design" Component={WebDesign}/> 
 <Route exact path="/work_digital_marketing" Component={DigitalMarketing}/> 
-<Route exact path="/work_seo" Component={SEO}/> 
+<Route exact path="/work_smo" Component={Smo}/> 
 <Route exact path="/work_ppc" Component={PayPerClick}/> 
 <Route exact path="/work_cyber_security" Component={CyberSecurity}/> 
 <Route exact path="/work_it_consultant" Component={ItConsultant}/> 
@@ -84,6 +88,9 @@ function App() {
 
 {/* Contact page Section routes here */}
 <Route exact path="/contact" Component={ContactUs}/>
+
+{/* Privacy Policy Section */}
+<Route exact path="/privacy" Component={Privacy}/>
 
       </Routes>
 
