@@ -1,5 +1,5 @@
 import React from "react";
-import Img1 from "../../../assets/SMO/SMO.jpg";
+import Img1 from "../../../assets/PayPerClick/pppc.jpg";
 import Img2 from "../../../assets/SMO/facebook.jpg";
 import Img3 from "../../../assets/SMO/twitter.jpg";
 import Img4 from "../../../assets/SMO/Linkedin.jpg";
@@ -10,7 +10,6 @@ import Img6 from "../../../assets/SMO/Youtube.jpg";
 // Icons from react icon
 import {
   BsFillArrowRightCircleFill,
-  BsFillTelephoneOutboundFill,
   BsFillKeyFill,
   BsFillFastForwardFill,
 } from "react-icons/bs";
@@ -37,32 +36,32 @@ const PayPerClick = () => {
                     className="nav-link text-dark fw-bold ms-3 my-1 btn btn-success"
                     href="#item-1-1"
                   >
-                    Facebook Advertising
+                    Search Advertising
                   </a>
                   <a
                     className="nav-link text-dark fw-bold ms-3 my-1 btn btn-success"
                     href="#item-1-2"
                   >
-                    Twitter Advertising
+                    Product Listing Ads
 
                   </a>
                   <a
                     className="nav-link text-dark fw-bold ms-3 my-1 btn btn-success"
                     href="#item-1-3"
                   >
-                    Linkedin Advertising
+                    Affiliate Marketing
                   </a>
                   <a
                     className="nav-link text-dark fw-bold ms-3 my-1 btn btn-success"
                     href="#item-1-4"
                   >
-                    Instagram Advertising
+                    Email Marketing
                   </a>
                   <a
                     className="nav-link text-dark fw-bold ms-3 my-1 btn btn-success"
                     href="#item-1-5"
                   >
-                    Youtube Marketing
+                 Performance Tracking
                   </a>
                 </nav>
               </nav>
@@ -80,30 +79,17 @@ const PayPerClick = () => {
             >
               <div id="item-1">
                 <h2>
-                  <b>S</b>ocial Media Optimization
+                  <b>P</b>ay Per Click
                 </h2>
                 <div className="row">
                   <div className="col mt-3">
                     <p className="text-secondary fw-semibold">
                       Welcome to{" "}
                       <b className="text-success">GRADICOGLOBAL !, </b>
-                      your go-to destination for Social Media Optimization (SMO)
-                      services. In today's digital age, social media has become
-                      a powerful platform for businesses to connect with their
-                      target audience, build brand awareness, and drive
-                      engagement. At Gradico Global, we specialize in leveraging
-                      the full potential of social media to help businesses
-                      thrive in the online realm.
+                      Pay-Per-Click (PPC) advertising is a digital advertising model where businesses pay for each click on their ads. It is a highly targeted and cost-effective method of driving traffic to a website or landing page. With PPC, businesses have control over their ad spend and can strategically target their audience based on specific keywords, demographics, interests, and more.
                     </p>
                     <p>
-                      At Gradico Global, we are dedicated to helping businesses
-                      harness the power of social media to enhance their online
-                      presence, engage with their audience, and achieve their
-                      marketing goals. Our expert team combines creativity,
-                      strategic thinking, and in-depth industry knowledge to
-                      deliver exceptional SMO services. Let us be your partner
-                      in optimizing your social media presence and unlocking the
-                      full potential of social media for your business.
+                    Gradico Global, a trusted digital marketing agency, offers comprehensive PPC advertising services to businesses. Their expert team helps clients develop effective PPC strategies, conduct keyword research, create compelling ad copy, set up and optimize campaigns, and maximize their ROI through continuous monitoring and optimization.
                     </p>
 
                     <span className="btn btn-dark mb-3">
@@ -118,6 +104,20 @@ const PayPerClick = () => {
             </div>
           </div>
           <hr />
+ <div className="bg-">
+    <div className="contaner row text-center">
+      <div className="col">
+        <h1>Ram</h1>
+        <h1>Ram</h1>
+        <h1>Ram</h1>
+        <h1>Ram</h1>
+        <h1>Ram</h1>
+        <h1>Ram</h1>  
+      </div>
+    </div>
+ </div>
+
+
           {/* After hero section 1st  */}
           <div id="item-1-1" className="bg-info">
             <div className="row">
@@ -132,7 +132,7 @@ const PayPerClick = () => {
               </div>
               <div className="col">
                 <h2 className="mt-2 p-3 fw-semibold text-center">
-                  Facebook Advertising
+                Search Advertising
                 </h2>
                 <p className="text-light">
                 In today's digital landscape, where billions of people are active on social media, Facebook advertising has emerged as a game-changer for businesses seeking to connect with their target audience in a meaningful way. With its unparalleled reach and sophisticated targeting options, Facebook provides businesses with a powerful platform to showcase their products or services, build brand awareness, and drive tangible results.                </p>

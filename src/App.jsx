@@ -57,7 +57,7 @@ function App() {
 
   return (
      <div>
-        <Navbar />
+          <Navbar />
         <Routes>
         <Route exact path="/" Component={HeroPage}/> 
         <Route exact path="/home" Component={Home}/> 

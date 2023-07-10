@@ -118,12 +118,12 @@ const Footer = () => {
                   <MdWhatsapp />{" "}
                 </i>{" "}
                 <a
-                  href="https://wa.me/9896549691"
+                  href="https://wa.me/886013800"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-decoration-none text-dark"
                 >
-                  +91 9896549691{" "}
+                  +91 9999555517{" "}
                 </a>
               </p>
               <p>
@@ -131,13 +131,12 @@ const Footer = () => {
                   <FiMail />{" "}
                 </i>{" "}
                 <a
-                  href="mailto:support@ggradico.com"
+                  href="mailto:support@gradicoglobal.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-decoration-none text-dark"
                 >
-                  {" "}
-                  support@ggradico.com{" "}
+                  support@gradicoglobal
                 </a>
               </p>
               <p>

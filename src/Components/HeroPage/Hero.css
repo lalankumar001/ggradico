@@ -1,6 +1,116 @@
+
+.BlogFile .nav{
+    position: absolute;
+    width: 100%;
+}
+.LandingPage_nav{
+  position: relative;
+}
+.LandingPage_nav img{
+  position: absolute;
+  margin-top: 1%;
+  border-bottom: 1px solid red;
+  margin-left: 3%;
+}
+.LandingPage_nav ul{
+  margin-left: 73%;
+  padding: 5%;
+  margin-top: 1%;
+}
+
+/* 
+---------------------------------------------
+Banner Style
+--------------------------------------------- 
+*/
+.main-banner {
+  background-image: url(../../assets/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 240px;
+  text-align: center;
+  background-color: #2a2a2a;
+}
+
+.main-banner p {
+  color: #fff;
+  padding: 30px 0px;
+  margin: 40px 75px 0px 75px;
+  border-top: 1px solid rgba(250,250,250,0.2);
+}
+
+.main-banner .buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.main-banner .big-border-button a {
+  font-size: 20px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 15px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-right: 15px;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  text-decoration: none!important;
+}
+
+.main-banner .big-border-button a:hover {
+  background-color: #fff;
+  color: #00bdfe;
+}
+
+.main-banner .icon-button a {
+  margin-top: 20px;
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  transition: all .3s;
+}
+
+.main-banner .icon-button a i {
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.main-banner .icon-button a:hover {
+  color: #00bdfe;
+}
+/* Landing page hero section banner end here */
+
+/* Landing_page_services section start from here */
+.Landing_page_services{
+  margin-top: -13%;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-shadow: #00bdfe;
+  border-radius: 10px;
+  
+}
+.Blinking{
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
 .Hero_page{
  margin-top: 7%;
- margin-bottom: 1%;
+ margin-bottom: 1%; 
 }
 
 .slider p{
@@ -11,6 +121,19 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: -20%;
 }
+.Website_dev_bg{
+    background: rgb(129, 148, 196);
+    background: linear-gradient(90deg, rgb(162, 177, 214) 55%, rgba(186,172,186,1) 100%);
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+.Web_Design_bg{
+    background: rgb(89,102,136);
+background: linear-gradient(90deg, rgba(89,102,136,1) 55%, rgba(151,94,151,1) 100%);
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,125,1) 100%);
+}
+
 
 .Web_dev_Icons:hover{
      font-size: 30px;
