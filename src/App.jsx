@@ -50,6 +50,9 @@ import Privacy from './Components/Privacy/Privacy'
 
 
 import './App.css'
+import Package from './Pages/Packages/Package';
+import CancellationPolicy from './Components/CancellationPolicy/CancellationPolicy';
+import TermAndConditions from './Components/TermAndConditions/TermAndConditions';
 
 
 
@@ -89,8 +92,11 @@ function App() {
 {/* Contact page Section routes here */}
 <Route exact path="/contact" Component={ContactUs}/>
 
-{/* Privacy Policy Section */}
+{/* Privacy Policy ,cancellationPolicy,terms and condition and  Packages Section */}
 <Route exact path="/privacy" Component={Privacy}/>
+<Route exact path="/cancellation_policy" Component={CancellationPolicy}/>
+<Route exact path="/terms_condition" Component={TermAndConditions}/>
+<Route exact path="/our_packages" Component={Package}/>
 
       </Routes>
 

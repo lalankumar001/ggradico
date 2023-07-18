@@ -1,5 +1,5 @@
 import React from 'react'
-import BlogImg01 from '../../assets/Blog1.png'
+import BlogImg01 from '../../assets/Blog01.png'
 import BlogImg from '../../assets/Blog.jpg'
 import ContactUs from '../ContactUs/ContactUs'
 

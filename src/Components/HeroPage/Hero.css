@@ -1,3 +1,7 @@
+.BlogFile{
+  margin-top: 0%;
+  position: relative;
+}
 
 .BlogFile .nav{
     position: absolute;
@@ -8,8 +12,7 @@
 }
 .LandingPage_nav img{
   position: absolute;
-  margin-top: 1%;
-  border-bottom: 1px solid red;
+  width: 130px;
   margin-left: 3%;
 }
 .LandingPage_nav ul{
@@ -20,7 +23,7 @@
 
 /* 
 ---------------------------------------------
-Banner Style
+ Landing page main Banner Style
 --------------------------------------------- 
 */
 .main-banner {
@@ -93,10 +96,12 @@ Banner Style
 .Landing_page_services{
   margin-top: -13%;
   border: 1px solid black;
-  border-radius: 30px;
-  box-shadow: #00bdfe;
   border-radius: 10px;
-  
+  background-image: url('../../assets/LandingPage/Services_bg.jpg');
+  padding-bottom: 2%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;  
 }
 .Blinking{
   animation: blink 1s infinite;

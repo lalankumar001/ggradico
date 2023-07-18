@@ -22,7 +22,7 @@ const ContactUs = () => {
                 </div>
                 <div className="d-flex mt-2">
                     <i className="bi bi-envelope"><FiMail /></i>
-                    <p className="mt-4 ms-3 "> <a href="mailto:support@ggradico.com" target="_blank" rel="noopener noreferrer " className='text-white text-decoration-none'> Email : support@ggradico.com </a></p> 
+                    <p className="mt-4 ms-3 "> <a href="mailto:support@gradicoglobal.com" target="_blank" rel="noopener noreferrer " className='text-white text-decoration-none'>Email: support@gradicoglobal</a></p> 
                 </div>
 
             </div>

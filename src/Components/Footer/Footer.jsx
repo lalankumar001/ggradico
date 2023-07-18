@@ -48,7 +48,7 @@ const Footer = () => {
               <ul>
                 <li className="nav-item">
                   <a className="" href="/about_us">
-                    About
+                    About Us
                   </a>
                 </li>
                 <li className="nav-item">
@@ -57,20 +57,26 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="" href="/our_team">
-                    Our Team
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="" href="/">
-                    Portfolio
-                  </a>
-                </li>
-                <li className="nav-item">
                   <a className="" href="/privacy">
                     Privacy Policy
                   </a>
                 </li>
+                <li className="nav-item">
+                  <a className="" href="/our_packages">
+                    Packages
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="" href="/terms_condition">
+                    Terms & Conditions
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="" href="/cancellation_policy">
+                  Cancellation/Refund Policy
+                  </a>
+                </li>
+
               </ul>
             </div>
             {/* third colom items here */}
@@ -95,6 +101,11 @@ const Footer = () => {
                 <li className="nav-item">
                   <a className="" href="/work_ppc">
                     Pay per Click
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="" href="https://ggbooking.com/" target="_blank">
+                    Tour & Traivel
                   </a>
                 </li>
                 <li className="nav-item">
@@ -145,6 +156,7 @@ const Footer = () => {
                 </i>{" "}
                 New Delhi, INDIA.
               </p>
+              <span className="btn btn-danger">Make a Payment</span>
             </div>
           </div>
         </div>

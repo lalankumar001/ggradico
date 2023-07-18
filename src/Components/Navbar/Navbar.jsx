@@ -200,6 +200,14 @@ const Navbar = () => {
                     Blog
                    </Link>
                 </li>
+                <li className="nav-item btn btn- fs-5">
+                 <Link  to='/blog'
+                    activeClassName="menu_active"
+                    className="nav-link"
+                  >
+                    Make a Payment
+                   </Link>
+                </li>
 
                 
                 <li className="nav-item d-grid gap-3 btn btn-dark fw-semibold mb-2">
