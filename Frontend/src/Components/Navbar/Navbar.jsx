@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="container-fluid">
           <Link to="/home" className="navbar-brand"></Link>
           <Link to="/home">
-            <img src={Logo} alt="Logo" width='130%' height='85' />
+            <img src={Logo} alt="Logo" width='100%' height='75'/>
           </Link>
           <button
             className="navbar-toggler"
@@ -37,8 +37,8 @@ const Navbar = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="offcanvas-body">
-              <ul className="navbar-nav justify-content-end flex-grow-1 pe-5 fw-semibold fs-4 pt-3">  
+            <div className="offcanvas-body text-center p-0 gap-0">
+              <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 fw-semibold fs-4">  
               <li className="nav-item btn btn- fs-5">
                  <Link  to='/home'
                     activeClassName="menu_active"
@@ -200,7 +200,7 @@ const Navbar = () => {
                     Blog
                    </Link>
                 </li>
-                <li className="nav-item btn btn- fs-5">
+                <li className="nav-item btn btn- fs-5 text-danger sm">
                  <Link  to='/blog'
                     activeClassName="menu_active"
                     className="nav-link"
@@ -210,7 +210,7 @@ const Navbar = () => {
                 </li>
 
                 
-                <li className="nav-item d-grid gap-3 btn btn-dark fw-semibold mb-2">
+                <li className="nav-item d-grid gap-3 btn btn-dark fw-semibold mb-2 rounded-5 Contact_btn">
                   <Link
                     activeClassName="menu_active"
                     className="nav-link text-info"

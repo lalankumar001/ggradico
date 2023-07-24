@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
             {/* Second colom item here */}
             <div className="col-md-6 col-lg-3 col-12 ft-2">
-              <h5 className="text-primary fw-semibold">About Company</h5>
+              <h5 className="text-primary fw-semibold mt-3">About Company</h5>
               <ul>
                 <li className="nav-item">
                   <a className="" href="/about_us">

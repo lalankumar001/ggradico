@@ -1,5 +1,4 @@
-.homepage{
-    margin-top:10%;
-    background: rgb(118,141,58);
-    background: linear-gradient(90deg, rgba(118,141,58,1) 0%, rgba(9,69,113,1) 90%);
+.homepagePopup{
+    margin: 130px 90px;
+   background-color:white;
 }

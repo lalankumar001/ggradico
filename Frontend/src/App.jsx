@@ -13,6 +13,8 @@ import Footer from './Components/Footer/Footer'
 
 import Home from './Components/Home/Home'
 import HeroPage from './Components/HeroPage/Hero'
+// Quick offering / Offering services on the landing page  / landing page services component
+import OfferingServices from './Components/HeroPage/OfferingServices';
 import { MdWhatsapp } from "react-icons/md";
 
 // All Navbar Pages imported Here
@@ -61,13 +63,14 @@ function App() {
   return (
      <div>
           <Navbar />
-        <Routes>
+      <Routes>
         <Route exact path="/" Component={HeroPage}/> 
+        <Route exact path="/our_services" Component={OfferingServices}/> 
         <Route exact path="/home" Component={Home}/> 
               {/* Who we are section routes here */}
-                      <Route exact path="/about_us" Component={AboutUs}/> 
+                      {/* {/* <Route exact path="/about_us" Component={AboutUs}/>  */}
                       <Route exact path="/our_team" Component={OurTeam}/> 
-                      <Route exact path="/testimonials" Component={Testimonials}/> 
+                      <Route exact path="/testimonials" Component={Testimonials}/>
 
 {/* What we do section routes here */}
 <Route exact path="/work_web_dev" Component={WebDevelopment}/> 

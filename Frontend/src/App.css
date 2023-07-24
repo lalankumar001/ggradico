@@ -2,121 +2,148 @@
   font-family: 'Libre Baskerville', serif;
   padding: 0%;
   margin: 0%;   
+  box-sizing: border-box;
 }
-
+.navbar-expand-lg{
+  padding: 0;
+}
 
 /* All Media Queries code here */
-
-@media (min-width: 576px) and (max-width: 992px){
-
-  /* Home page Media query */
-.Home_page_media{
-  width: 100%;
-  height: auto;
-  padding: 0%;
-}
-.MiniNavbar{
-display: none;
-}
-/* Home page Services section media query */
-.Services_page{  
-  display: block;
-  width: 100%;
-  height: auto;
-}    
-
-.Services_page h1{
-  width: 100%;
-  height: auto;
-  padding-top: 4%;
-  margin: 0% 2%;
-  font-size: 23px;
-  text-align: center;
-}
-.Services_page p{
-  font-size: 10px;
-  padding: auto;
-}
-/* Services page Web Dev section */
-.Web_Development{
-  width: 100%;
-  display: flex;
-  padding: 3%;
-  margin: 0% 30%;
-   justify-content: center;
+/* LANDING PAGE RESPONSIVE CSS START FROM HERE*/
+@media (min-width: 320px) and (max-width:993px) {
+  /* Navbar Responsive css */
+  .navbar{
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-expand-lg{
+   padding: 0;
+ }
+  .navbar img{
+   width: 100%;
+   height: 50px;
+  }
+ .nav-item{
+    margin-top: -2.5%;
+ }
+ .Contact_btn{
+  margin: 0 auto;
+  width: 70%;
+ }
+ /* Navbar Responsive css end here*/
  
-}
-.Web_Development img{
+ /* HERO PAGE RESPONSIVE CSS START HERE */
+ .HEROPAGE{
+   padding: 0;
+ }
+ .main-banner{
+   padding-top: 80px;
+ }
+   .header-text p {
+     font-size: 0.7rem;
+     margin-top: 20px;
+     min-width: 80%;
+     margin: 0 auto;
+   }
+   .header-text{
+     position: relative;
+   }
+ 
+   .header-text span {
+     font-size: 1rem;
+   }
+   
+ .main-banner{
+   background-image: url('./assets/banner-bg.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+ }
+  .big-border-button{
+   /* margin-top: -50px; */
+   position: absolute;
+   bottom: 0px;
+  }
+  .big-border-button a{
+   font-size: 0.6rem!important;
+   padding: 0;
+   background: #3c3939!important;
+ }
+ /* LANDING PAGE POPUP RESPONSIVE CSS START FROM HERE */
+ .homepagePopup{
   display: none;
+ }
+ 
+ /* Adjust the services section for mobile */
+   .Landing_page_services {
+     text-align: center;
+     padding: 10px;
+   }
+ 
+   .Landing_page_services .mx-5 {
+     margin: 0 auto;
+   }
+ 
+   .Landing_page_services .swiper-slide img {
+     width: 100%;
+   }
+ 
+   /* Adjust the destinations section for mobile */
+   .p-2 h1 {
+     font-size: 2rem;
+     margin: 20px 0;
+   }
+ 
+   .p-2 .swiper-slide img {
+     width: 100%;
+   }
+ 
+   /* Adjust the working process section for mobile */
+   .Working_Process {
+     padding: 10px;
+   }
+ .Working_process_landingpage{
+   display: flex;
+   flex-direction: column;
+ }
+ .Working_process_Title{
+   display: none;
+ }
+ .Working_step_title{
+   display: inline;
+ }
+ .Working_step_product_release{
+   display: inline;
+   padding: 5%;
+   background: rgb(34,193,195);
+   background: linear-gradient(0deg, rgba(34,193,195,1) 22%, rgba(253,45,248,1) 79%);
+   text-align: center;
+ }
+ 
+   /* Adjust the Find Us section for mobile */
+   .FindUs .row {
+     flex-direction: column;
+   }
+ 
+   .FindUs .col {
+     text-align: center;
+     margin: 20px 0;
+   }
+ 
+   .FindUs img {
+     width: 100%;
+   }
+ 
+   .Office_address {
+     text-align: center;
+   }
 }
 
-.Web_Development .row{
-  width: 100%;
-  display:block;
-  justify-content: center;
-  scroll-behavior: smooth;
+/* Responsive Design css end here */
 
-}
-
-/* Web Designing section */
-.Web_Designing{
-  width: 100%;
-  display: flex;
-  padding: 3%;
-  margin: 0% 30%;
-   justify-content: center;
-}
-.Web_Designing .row{
-  width: 100%;
-  display:block;
-  justify-content: center;
-  scroll-behavior: smooth;
-
-}
-.Web_Designing img{
-  display: none;
-}
-/* Cyber Security section */
-.Cyber_security{
-  width: 100%;
-  display: flex;
-  padding: 3%;
-  margin: 0% 30%;
-   justify-content: center;
-}
-.Cyber_security img{
-  display: none;
-}
-.Cyber_security .row{
-  width: 100%;
-  display:block;
-  justify-content: center;
-  scroll-behavior: smooth;
-}
- /* Carrer page media query*/
-  .CarrerPage{
-    width: 100%;
-    height: auto;
-    padding: auto;
-  }
-  /* Contact us page */
-  .contactUs_page{
-    width: 100%;
-    height: auto;
-    display: inline;
-  }
-  .contactUs_page p{
-    font-size: 15px;
-  }
-  /* Blog Page */
-  .BlogPage{
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-  }
-  .BlogPage .container{
-    width: 100%;
-    height: auto;
-    display: inline;
-  }
+/* Another media query */
+@media (min-width:992px) and (max-width:1280px) {
+  .homepagePopup img{
+    display: none;
+   }
 }

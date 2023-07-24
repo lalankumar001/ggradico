@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay"
 import "swiper/css/zoom"
 import { useTypewriter } from "react-simple-typewriter";
-import GradicoLogo from "../../assets/ggradic_bg_remove.png"  ;
+
 
 // All services slider images from assets/landing folder 
 import WebDesign from '../../assets/LandingPage/WebDev.png';
@@ -68,7 +68,7 @@ const Hero = () => {
     words: [
       "Website Designing and Development !",
       "Study Abroad !",
-      "Tour And Traivel !",
+      "Tour And Travel !",
       "Ecommerce !",
       "Cyber Security Services !",
       "Immigration Permanent residency Work permit!",
@@ -87,95 +87,40 @@ const Hero = () => {
       ]);
     }
   };
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <div>
       {/* Landing page */}
-      <div className="BlogFile fixed-top">
-        <div className="LandingPage_nav">
-         <Link to="/">  <img
-            src={GradicoLogo}
-            alt="img"
-            width="100"
-            data-aos="fade-right"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="700"
-            data-aos-duration="1000"
-          />
-          </Link>
-          <ul
-            className="container w-25 nav nav-pills nav-fill p-2 small  rounded-5 shadow-sm"
-            id="pillNav2"
-            role="tablist"
-            data-aos="fade-left"
-            data-aos-anchor="#example-anchor"
-            data-aos-offset="700"
-            data-aos-duration="1000"
-          >
-            <li className="nav-item" role="presentation">
-             <Link to='/Home'> <button
-                className="nav-link active rounded-5"
-                id="home-tab2"
-                data-bs-toggle="tab"
-                type="button"
-                role="tab"
-                aria-selected="true"
-              >
-                Home
-              </button>
-              </Link>
-            </li>
-            <li className="nav-item" role="presentation">
-             <Link to="/blog" className="text-decoration-none"><button
-                className="nav-link rounded-5"
-                id="contact-tab2"
-                data-bs-toggle="tab"
-                type="button"
-                role="tab"
-                aria-selected="false"
-              >
-                Blog
-              </button>
-              </Link>
-            </li>
-            <li className="nav-item" role="presentation">
-              <Link to="/Contact" className="text-decoration-none"><button
-                className="nav-link rounded-5"
-                id="contact-tab2"
-                data-bs-toggle="tab"
-                type="button"
-                role="tab"
-                aria-selected="false"
-              >
-                Contact
-              </button>
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div class="main-banner">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-10 offset-lg-1">
-                <div class="header-text">
+      <div className="HEROPAGE">
+      <div className="position-absolute" data-aos="zoom-in"><HeroPageModal /></div>
+        <div className="main-banner">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-10 offset-lg-1">
+                <div className="header-text">
                   <span className="fs-2 fw-semibold text-white">
-                  <span className="text-info"> <span className="Blinking">"</span> Step into a World of Infinite Possibilities : </span> Where Dreams Transcend into Reality !<span className="Blinking"> "</span> 
+                  <span className="text-info"> <span className="Blinking text-white">"</span> Step into a World of Infinite Possibilities : </span>Where Dreams Transcend into Reality ! <span className="Blinking"> "</span> 
                   </span>
-                  <p data-aos="zoom-in">
-                    <span className="fs-2 text-secondary ">
-                      <RiDoubleQuotesL className="Blinking"/>
-                    </span>{" "}
+                  <p>
+                    <span className="fs-2 text-white">
+                      <RiDoubleQuotesL/>
+                    </span>
                     Unlock Limitless Possibilities. Empower Your Journey to
                     Success. Seamless Solutions for Growth. Discover, Innovate,
                     Succeed. Experience Excellence in Every Service.
                     Transforming Dreams into Reality. Your Success Starts Here.
                     Unleash Your Potential Today!{" "}
-                    <span className="fs-2 text-secondary">
-                      <RiDoubleQuotesR  className="Blinking"/>
+                    <span className="fs-2 text-white">
+                      <RiDoubleQuotesR />
                     </span>
-                  </p>
-                  <div class="buttons">
-                    <div class="big-border-button">
+                  </p>  
+                  <div className="buttons">
+                    <div className="big-border-button">
                       <a href="/home">Explore More</a>
                     </div>
                   </div>
@@ -289,8 +234,8 @@ const Hero = () => {
           Our <span className="text-dark">Working</span> Process
         </h1>
         <div className="p-3">
-          <div className="row">
-            <h5 className="text-success fs-5">
+          <div className="row Working_process_landingpage">
+            <h5 className="text-success fs-5 Working_process_Title">
               <span className="spinner-grow" role="status"></span> Planning{" "}
               <span className="fs-4">
                 <FaAngleDoubleRight />
@@ -324,24 +269,37 @@ const Hero = () => {
             </h5>
             <div className="col shadow rounded">
               <img src={PlaningSvg} alt="svg" />
-              <h1 className="text-center fw-bold text-secondary p-3">1</h1>
+              <h1 className="text-center fw-bold text-secondary p-3">1
+              <br />
+             <b className="Working_step_title">Planing</b></h1>
             </div>
             <div className="col shadow rounded">
               <img src={DesigningSvg} alt="svg" />
-              <h1 className="text-center fw-bold text-secondary p-3">2</h1>
+              <h1 className="text-center fw-bold text-secondary p-3">2
+              <br />
+              <b className="Working_step_title">Ui Design & Development</b>
+              </h1>
             </div>
             <div className="col shadow rounded">
               <img src={OptamizeSvg} alt="svg" />
-              <h1 className="text-center fw-bold text-secondary p-3">3</h1>
+              <h1 className="text-center fw-bold text-secondary p-3">3
+              <br />
+              <b className="Working_step_title">Quality Analysis</b>
+              </h1>
             </div>
             <div className="col shadow rounded">
               <img src={resultSvg} alt="svg" />
-              <h1 className="text-center fw-bold text-secondary p-3">4</h1>
+              <h1 className="text-center fw-bold text-secondary p-3">4
+              <br />
+              <b className="Working_step_title">Result</b></h1>
             </div>
             <div className="col shadow rounded">
               <img src={FeedbacSvg} alt="svg" />
-              <h1 className="text-center fw-bold text-secondary p-3">5</h1>
+              <h1 className="text-center fw-bold text-secondary p-3">5
+              <br />
+              <b className="Working_step_title">Client Feedback</b></h1>
             </div>
+            <h1 className="Working_step_product_release">Product Release <BsFillRocketTakeoffFill className="fs-1 mx-2"/></h1>
           </div>
         </div>
       </div>
@@ -371,7 +329,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
       {/* Contactus page */}
       <h1 className="text-secondary fw-bold mx-4 p-3">
         Need any <span className="text-dark">Help</span> Contact Us
