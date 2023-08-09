@@ -1,16 +1,19 @@
 *{
   font-family: 'Libre Baskerville', serif;
-  padding: 0%;
-  margin: 0%;   
+  padding: 0;
+  margin: 0;   
   box-sizing: border-box;
 }
 .navbar-expand-lg{
   padding: 0;
 }
-
+.Navbar_bg{
+  /* background-color: red; */
+  background-color: #226CF5;
+}
 /* All Media Queries code here */
 /* LANDING PAGE RESPONSIVE CSS START FROM HERE*/
-@media (min-width: 320px) and (max-width:993px) {
+@media (min-width: 0px) and (max-width:993px) {
   /* Navbar Responsive css */
   .navbar{
     margin: 0;
@@ -20,66 +23,137 @@
    padding: 0;
  }
   .navbar img{
-   width: 100%;
+   width: 110%;
    height: 50px;
   }
  .nav-item{
-    margin-top: -2.5%;
+    height: 11vh;
+   }
+ .Responsive_Nav_item , .nav-link{
+  color: black!important;
+  font-weight: 600;
  }
  .Contact_btn{
   margin: 0 auto;
   width: 70%;
+  background-color: rgb(164, 146, 146);
  }
  /* Navbar Responsive css end here*/
  
  /* HERO PAGE RESPONSIVE CSS START HERE */
  .HEROPAGE{
-   padding: 0;
+   padding:0;
+   margin: 0;
  }
- .main-banner{
-   padding-top: 80px;
- }
-   .header-text p {
-     font-size: 0.7rem;
-     margin-top: 20px;
-     min-width: 80%;
-     margin: 0 auto;
-   }
-   .header-text{
-     position: relative;
-   }
- 
-   .header-text span {
-     font-size: 1rem;
-   }
-   
- .main-banner{
-   background-image: url('./assets/banner-bg.jpg');
-   background-size: cover;
-   background-position: center;
-   height: 100vh;
- }
-  .big-border-button{
-   /* margin-top: -50px; */
-   position: absolute;
-   bottom: 0px;
-  }
-  .big-border-button a{
-   font-size: 0.6rem!important;
-   padding: 0;
-   background: #3c3939!important;
- }
+.HeroPage_heroSection{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column-reverse;
+}
+.HeroPage_heroSection .row{  
+   flex-direction: column-reverse;
+}
+.HeroImg{
+  padding: 0%;
+  margin:0%;
+
+}
+.HeroPage_title{
+  font-size: 20px!important;
+  text-align: center;
+  margin-top: -13%;
+}
+.HeroPage_title_pera{
+  font-size: 15px!important;
+  color: black;
+  font-weight: 700!important;
+}
+.Explore_btn{
+  font-size: 15px;
+  width: 40%;
+  padding: 7px 2px !important;
+}
+.Buttons{
+  margin-top: 0%!important;
+}
+.Enquire_btn{
+  font-size: 15px;
+  width: 40%;
+  padding: 7px 2px !important;
+}
+/* After HEro section */
+.After_hero_section{
+  padding: 0% 0%;
+  margin: 0% 0%;
+}
+.Our_offering_title{
+ font-size: 20px;
+ margin-top: -5%!important;
+}
  /* LANDING PAGE POPUP RESPONSIVE CSS START FROM HERE */
  .homepagePopup{
+   margin: 13% 12%;
+   height: fit-content;
+ }
+ .Popup_close{
+  text-align: center!important;
+ font-size: 12px !important;
+ }
+ .text-center.mb-2{
+   font-size: 15px;
+   color:black;
+   font-weight: 600;
+ }
+ .Abroad_edu{
+  font-size: 15px;
+   margin-left: 60%;
+  display: block!important;
+ }
+ .Abroad_text{
+  font-size: 8px!important;
+   display: block!important;
+   margin-left: 50%;
+ }
+ .PopupModal_message{
+  margin: 0%;
+  width: 100%;
+ }
+ .PopupModal_img{
   display: none;
  }
- 
+ .Countries{
+  display: flex; 
+  align-items: center!important;
+  margin-left: 10%;
+ }
+ .Countries_second_row{
+  align-items: center;
+  padding: 12%!important;
+ }
+ .Explore_countries{
+ display: none;
+ }
+ .OurTopDestinations{
+   display: flex;
+ }
+ .OurTopDestinations .row{
+  flex-direction: column;
+ }
+ .OurTopDestinations h1 , p{
+  text-align: center; 
+}
+
  /* Adjust the services section for mobile */
    .Landing_page_services {
      text-align: center;
      padding: 10px;
    }
- 
+   .Landing_page_services.shadow>.mx-2.p-3{
+    height: 170px;
+   }
+   .mx-2.p-3>typeEffect{
+      max-width: 80% !important;
+   }
    .Landing_page_services .mx-5 {
      margin: 0 auto;
    }
@@ -137,6 +211,11 @@
    .Office_address {
      text-align: center;
    }
+.AbroadEduAndVisa{
+  display: inline;
+}
+
+
 }
 
 /* Responsive Design css end here */

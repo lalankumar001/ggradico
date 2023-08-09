@@ -1,43 +1,101 @@
 import React, { useState } from "react";
-import Modalimg from "../../assets/Modalbgimg.png";
+import emailjs from "emailjs-com";
+import Modalimg from "../../assets/HeroPageImg/poupupbgImg.jpeg";
 import { GrClose, GrPhone } from "react-icons/gr";
-import { FaUserTie } from "react-icons/fa";
+import { FaUserTie, FaUserGraduate, FaCcVisa, FaUsers } from "react-icons/fa";
 import { ImMail2 } from "react-icons/im";
+import { BsPersonWorkspace } from "react-icons/bs";
+
 import "./HeroPageModal.css";
 
 const HeroPageModal = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    user_number: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const serviceID = "service_e5g7qiu";
+    const templateID = "template_5l8knlm";
+    const userID = "azlb9H78FvjVbmEpM";
+
+    emailjs
+      .send(serviceID, templateID, formData, userID)
+      .then((response) => {
+        console.log("Email sent successfully:", response);
+        alert("Thank You for Reaching Out! Our Team Will Be in Touch Soon :", response);
+        setFormData({
+          name: "",
+          user_number: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+      });
+  };
   const [showPopup, setShowPopup] = useState(true);
   const handleClosePopup = () => {
     setShowPopup(false);
   };
 
-  const handleSubmitForm = (e) => {
-    e.preventDefault();
-    alert("Thanks for Connecting with Us, Our team will be back to you very soon.");
-    // Handle form submission logic here
-
-    // After form submission, close the popup
-    handleClosePopup();
-  };
   return (
     <div>
       {showPopup && (
-        <div className="homepagePopup  p-3 rounded shadow">
+        <div className="homepagePopup  p-1  w-75 rounded shadow">
           <div className="container row Popup_close_btn">
             <span className="text-end ">
               <button type="button" onClick={handleClosePopup}>
-                <span className="fs-5 p-2 bg-white shadow rounded">
+                <span className="fs-5 p-2 Popup_close">
                   {" "}
-                  <GrClose/>
+                  <GrClose />
                 </span>
               </button>
             </span>
-            <h1 className="text-start">
-              Get In <b className="text-info">Touch</b> With Us For <b className="text-danger">PR</b> and <b className="text-danger">Study Visa</b>
+            <h1 className="text-center mb-2">
+              Get In <b className="text-info">Touch</b> With Us For
             </h1>
-            <div className="col mt-2 ms-2">
-              <div className="popup-content w-100">
-                <form onSubmit={handleSubmitForm}>
+            <div className="container text-center text-primary row">
+              <div className="col ">
+                <span>
+                  <FaUserGraduate className="text-danger Abroad_edu" />{" "}
+                  <b className="text-danger Abroad_text"> Abroad Education </b>
+                </span>
+              </div>
+              <div className="col">
+                <span>
+                  <FaCcVisa className=" text-danger Abroad_edu" />{" "}
+                  <b className="text-danger Abroad_text"> Student & Others Visa</b>
+                </span>
+              </div>
+              <div className="col">
+                <span>
+                  <BsPersonWorkspace className="text-danger Abroad_edu" />{" "}
+                  <b className="text-danger Abroad_text"> Work Permit </b>
+                </span>
+              </div>
+              <div className="col">
+                <span>
+                  <FaUsers className="text-danger Abroad_edu" />{" "}
+                  <b className="text-danger Abroad_text "> Immigiration </b>
+                </span>
+              </div>
+            </div>
+            <div className="col mt-2 ms-5">
+              <div className="popup-content">
+                <form onSubmit={handleSubmit}>
                   <div className="input-group my-2 ">
                     <div className="input-group-text">
                       <FaUserTie />
@@ -46,8 +104,11 @@ const HeroPageModal = () => {
                       type="text"
                       className="form-control rounded"
                       id="inlineFormInputGroupUsername"
-                      placeholder="Full Name"
                       required
+                      name="name"
+                      placeholder="Name"
+                      value={formData.name}
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="input-group my-2">
@@ -60,6 +121,9 @@ const HeroPageModal = () => {
                       id="inlineFormInputGroupUsername"
                       placeholder="Phone Number"
                       required
+                      name="user_number"
+                      onChange={handleChange}
+                      value={formData.user_number}
                     />
                   </div>
                   <div className="input-group my-2">
@@ -70,31 +134,37 @@ const HeroPageModal = () => {
                       type="email"
                       className="form-control rounded"
                       id="inlineFormInputGroupUsername"
-                      placeholder="Email"
                       required
-                      
+                      name="email"
+                      placeholder="Email"
+                      value={formData.email}
+                      onChange={handleChange}
                     />
                   </div>
-                  <div>
-                    <select className="form-select rounded" id="inlineFormSelectPref" required>
-                      <option selected>Let's choose from here..</option>
-                      <option value="1">PR Visa Services</option>
-                      <option value="2">Global Education Consultancy</option>
-                      <option value="3">Website Design and Development</option>
-                      <option value="4">Travel Packages</option>
-                      <option value="5">Static / Dynamic Web Development</option>
-                      <option value="6">Social Media Optimization</option>
-                    </select>
+                  <div className="from-control">
+                    <textarea
+                      id="User_message"
+                      cols="48"
+                      rows="3"
+                      className="rounded PopupModal_message"
+                      required
+                      name="message"
+                      placeholder="Message"
+                      value={formData.message}
+                      onChange={handleChange}
+                    ></textarea>
                   </div>
-                  <div className="from-control my-2">
-                    <textarea name="" id="" cols="37" rows="3" className="rounded PopupModal_message" placeholder=" Message" required></textarea>
-                  </div>
-                  <button type="submit" className="btn btn-warning w-100 p-2 mt-2">Submit</button>
+                  <button
+                    type="submit"
+                    className="btn btn-warning w-100 p-2 mt-1"
+                  >
+                    Submit
+                  </button>
                 </form>
               </div>
             </div>
             <div className="col PopupModal_img">
-              <img src={Modalimg} alt="img" width='620' />
+              <img src={Modalimg} alt="img" width="520" />
             </div>
           </div>
         </div>
@@ -104,4 +174,3 @@ const HeroPageModal = () => {
 };
 
 export default HeroPageModal;
-

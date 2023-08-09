@@ -2,26 +2,27 @@ import React from "react";
 import "bootstrap/dist/js/bootstrap.bundle";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/GgradicoLogo.png";
+import Logo from "../../assets/GglobalLogo.png"
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-white shadow fixed-top">
+      <nav className="navbar navbar-expand-lg fixed-top Navbar_bg">
         <div className="container-fluid">
           <Link to="/home" className="navbar-brand"></Link>
           <Link to="/home">
             <img src={Logo} alt="Logo" width='100%' height='75'/>
           </Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler bg-white shadow rounded-3"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon shadow"></span>
+          <span className='text-danger' ><GiHamburgerMenu /></span>
           </button>
           <div
             className="offcanvas offcanvas-end"
@@ -37,12 +38,12 @@ const Navbar = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="offcanvas-body text-center p-0 gap-0">
-              <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 fw-semibold fs-4">  
-              <li className="nav-item btn btn- fs-5">
+            <div className="offcanvas-body text-center text-danger p-0 gap-0">
+              <ul className="navbar-nav justify-content-end flex-grow-1 pe-3 fw-semibold fs-4 ">  
+              <li className="nav-item btn btn- fs-6">
                  <Link  to='/home'
                     activeClassName="menu_active"
-                    className="nav-link"
+                    className="nav-link text-white "
                   >
                     Home
                    </Link>
@@ -50,31 +51,31 @@ const Navbar = () => {
                 <li className="nav-item">
                   <a
                     activeClassName="menu_active"
-                    className="nav-link text-dark"
+                    className="nav-link"
                   >
                     <div className="dropdown">
                       <button
-                        className="btn btn- dropdown-toggle fs-5"
+                        className="btn btn- dropdown-toggle fs-6 text-white Responsive_Nav_item"
                         type="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
                         Who We Are
                       </button>
-                      <ul className="dropdown-menu">
+                      <ul className="dropdown-menu ">
                         <li>
-                          <Link to='/about_us' className="dropdown-item" href="#">
+                          <Link to='/about_us' className="dropdown-item " href="#">
                             About Us
                           </Link>
                         </li>
                         <li>
-                          <Link to='/our_team' className="dropdown-item" href="#">
-                            Our team
+                          <Link to='/blog' className="dropdown-item" href="#">
+                            Blog
                           </Link>
                         </li>
                         <li>
-                          <Link to='/testimonials' className="dropdown-item" href="#">
-                            Our Testimonials
+                          <Link to='/comming_soon' className="dropdown-item" href="#">
+                            Testimonials
                           </Link>
                         </li>
                       </ul>
@@ -90,7 +91,7 @@ const Navbar = () => {
                   >
                     <div className="dropdown">
                       <button
-                        className="btn btn- dropdown-toggle fs-5"
+                        className="btn btn- dropdown-toggle fs-6 text-white Responsive_Nav_item"
                         type="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
@@ -99,48 +100,28 @@ const Navbar = () => {
                       </button>
                       <ul className="dropdown-menu">
                         <li>
-                          <Link to='/work_web_dev' className="dropdown-item" href="#">
-                            Web Development
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to='/work_web_design' className="dropdown-item" href="#">
-                            Web Designing
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to='/work_digital_marketing' className="dropdown-item" href="#">
-                            Digital Marketing
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to='/work_smo' className="dropdown-item" href="#">
-                            Social Media Optimization 
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to='/work_ppc' className="dropdown-item" href="#">
-                           Pay Per Click (PPC)
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to='/work_cyber_security' className="dropdown-item" href="#">
-                            Cyber Security & Ethical Hacking
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to='/work_it_consultant' className="dropdown-item" href="#">
-                          IT Consultant Services
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to='/work_abroad_education' className="dropdown-item" href="#">
+                          <Link to='/comming_soon' className="dropdown-item" href="#">
                           Abroad Education Consultancy
                           </Link>
                         </li>
                         <li>
-                          <Link to='/work_data_recovery' className="dropdown-item" href="#">
-                         Data Recovery
+                          <Link to='/comming_soon' className="dropdown-item" href="#">
+                          University Admissions
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to='/comming_soon' className="dropdown-item" href="#">
+                          Visa Consultancy
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to='/comming_soon' className="dropdown-item" href="#">
+                          Work Permit
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to='/comming_soon' className="dropdown-item" href="#">
+                          Immigiration
                           </Link>
                         </li>
                       </ul>
@@ -148,72 +129,37 @@ const Navbar = () => {
                   </a>
                 </li>
 
-                <li className="nav-item">
-                  <Link
-                    activeClassName="menu_active"
-                    className="nav-link text-dark"
-                    to="/Contact"
+                <li className="nav-item btn btn- fs-6">
+                 <Link  to='/comming_soon'
+                    activeClassName="menu_active "
+                    className="nav-link text-white"
                   >
-                    <div className="dropdown">
-                      <button
-                        className="btn btn- dropdown-toggle fs-5"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Courses
-                      </button>
-                      <ul className="dropdown-menu">
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            Cyber Security
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                            Ethical Hacking
-                          </a>
-                        </li>
-                        <li>
-                          <a className="dropdown-item" href="#">
-                          Data Recovery
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </Link>
+                    Upcoming Events
+                   </Link>
                 </li>
-
-                <li className="nav-item btn btn- fs-5">
+                
+                <li className="nav-item btn btn- fs-6">
                  <Link  to='/careers'
                     activeClassName="menu_active"
-                    className="nav-link"
+                    className="nav-link text-white"
                   >
                     Careers
                    </Link>
                 </li>
-                <li className="nav-item btn btn- fs-5">
-                 <Link  to='/blog'
+                                
+                <li className="nav-item btn btn- fs-6">
+                 <Link to='/pay'
                     activeClassName="menu_active"
-                    className="nav-link"
-                  >
-                    Blog
-                   </Link>
-                </li>
-                <li className="nav-item btn btn- fs-5 text-danger sm">
-                 <Link  to='/blog'
-                    activeClassName="menu_active"
-                    className="nav-link"
+                    className="nav-link text-white"
                   >
                     Make a Payment
                    </Link>
                 </li>
-
-                
-                <li className="nav-item d-grid gap-3 btn btn-dark fw-semibold mb-2 rounded-5 Contact_btn">
+                                
+                <li className="nav-item d-grid gap-3 btn btn-light fw-semibold mb-2 rounded-pill  Contact_btn">
                   <Link
                     activeClassName="menu_active"
-                    className="nav-link text-info"
+                    className="nav-link text-dark"
                     to="/Contact"
                   >
                     Contact Us

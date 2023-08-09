@@ -1,55 +1,88 @@
+
 import React, { useState } from 'react';
-import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import axios from 'axios';
 
 const PaymentForm = () => {
-  const [paymentError, setPaymentError] = useState(null);
-  const [paymentSuccess, setPaymentSuccess] = useState(null);
-  const stripe = useStripe();
-  const elements = useElements();
+  const PHONEPE_MERCHANT_ID ='M1KDULVI2IHU'; // Remove the space at the beginning
+  const PHONEPE_API_KEY ='972d4b31-3ec4-4471-be77-b0df90a4e67d';
+  const PHONEPE_CALLBACK_URL ='https://api.phonepe.com/apis/hermes/pg/v1/pay';
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const [amount, setAmount] = useState('');
+  const [paymentUrl, setPaymentUrl] = useState('');
 
-    if (!stripe || !elements) {
-      // Stripe.js has not loaded yet.
-      return;
-    }
+  const handleAmountChange = (event) => {
+    setAmount(event.target.value);
+  };
 
-    const cardElement = elements.getElement(CardElement);
+  const initiatePayment = async () => {
+    try {
+      const order_id = String(Math.random()); // Convert the random number to a string
 
-    const { error, paymentMethod } = await stripe.createPaymentMethod({
-      type: 'card',
-      card: cardElement,
-    });
+      const payload = {
+        merchantId: PHONEPE_MERCHANT_ID,
+        merchantTransactionId: 'MT7850590068188104',
+        merchantUserId: 'MU933037302229373',
+        orderId: order_id,
+        amount: amount,
+        redirectUrl: 'https://webhook.site/redirect-url',
+        redirectMode: 'POST',
+        returnUrl: PHONEPE_CALLBACK_URL,
+        paymentInstrument: {
+          type: 'PAY_PAGE',
+        },
+        // Add more relevant parameters as needed
+      };
 
-    if (error) {
-      setPaymentError(error.message);
-      setPaymentSuccess(null);
-    } else {
-      // Send the paymentMethod.id to your backend to process the payment
-      const paymentMethodId = paymentMethod.id;
-      try {
-        const response = await axios.post('http://localhost:5000/api/payment', { paymentMethodId });
-        setPaymentSuccess(response.data.message);
-        setPaymentError(null);
-      } catch (err) {
-        setPaymentError('Error processing the payment. Please try again.');
-        setPaymentSuccess(null);
+      const headers = {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${PHONEPE_API_KEY}`,
+      };
+
+      const response = await axios.post(
+        'https://api.phonepe.com/apis/hermes/pg/v1/pay',
+        payload,
+        {
+          headers: headers,
+        }
+      );
+
+      if (response.data.statusCode === 'SUCCESS') {
+        setPaymentUrl(response.data.paymentUrl);
+      } else {
+        console.error('Payment initiation failed. Please try again.');
       }
+    } catch (error) {
+      console.error('Error initiating payment:', error);
     }
   };
 
   return (
-    <div>
-    <form onSubmit={handleSubmit}>
-    <CardElement />
-      <button type="submit">Pay Now</button>
-      {paymentError && <div>{paymentError}</div>}
-      {paymentSuccess && <div>{paymentSuccess}</div>}
-    </form>
+    <div className="mt-5 p-5">
+      <h2>PhonePe Payment Form</h2>
+      <label htmlFor="amount">Amount:</label>
+      <input
+        type="number"
+        id="amount"
+        value={amount}
+        onChange={handleAmountChange}
+        required
+      />
+      <button onClick={initiatePayment}>Proceed to Payment</button>
+      {paymentUrl && (
+        <div>
+          <p>Click the button below to proceed to PhonePe payment:</p>
+          <a
+            href={paymentUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Proceed to PhonePe Payment
+          </a>
+        </div>
+      )}
     </div>
   );
 };
 
 export default PaymentForm;
+

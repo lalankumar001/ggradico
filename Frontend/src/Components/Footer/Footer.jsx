@@ -19,13 +19,11 @@ const Footer = () => {
             {/* Fist Colom items here */}
             <div className="col-md-6 col-lg-4 col-12 ft-1">
               <h3>
-                <span className="text-danger">GRADICO</span>GLOBAL PVT.LTD
+                <span className="text-danger">GRADICOGLOBAL</span> MANAGEMENT & SERVICES PVT.LTD
               </h3>
-              <p>
-                {" "}
+              <p className="fw-semibold">
                 Join us on this exhilarating journey as we revolutionize the way
-                businesses connect, engage, and thrive in the digital and crypto
-                landscape.
+                businesses connect, engage, and thrive in global education and visa services, guiding you towards a future without borders
               </p>
               <div className="footer-icons">
                 <i className="fa-brands fa-facebook">
@@ -62,7 +60,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="" href="/our_packages">
+                  <a className="" href="/comming_soon">
                     Packages
                   </a>
                 </li>
@@ -83,24 +81,29 @@ const Footer = () => {
             <div className="col-md-6 col-lg-3 col-12 col-text-center ft-2">
               <h5 className="text-primary fw-semibold">Our Services</h5>
               <ul>
-                <li className="nav-item">
-                  <a className="" href="/work_web_dev">
-                    Website Development
+              <li className="nav-item">
+                  <a className="" href="/work_abroad_education">
+                    Abroad Education Consultancy
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="" href="/work_web_design">
-                    Website Design
+                    University Admissions
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="" href="/work_smo">
-                    Social Media Optimization
+                    Visa Consultancy
                   </a>
                 </li>
                 <li className="nav-item">
                   <a className="" href="/work_ppc">
-                    Pay per Click
+                    Work Permit
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="" href="/work_ppc">
+                    Immigiration
                   </a>
                 </li>
                 <li className="nav-item">
@@ -108,11 +111,7 @@ const Footer = () => {
                     Tour & Travels
                   </a>
                 </li>
-                <li className="nav-item">
-                  <a className="" href="/work_abroad_education">
-                    Abroad Education Consultancy
-                  </a>
-                </li>
+                
               </ul>
             </div>
             {/* forth colom itmes here */}
@@ -156,7 +155,7 @@ const Footer = () => {
                 </i>{" "}
                 New Delhi, INDIA.
               </p>
-              <span className="btn btn-danger">Make a Payment</span>
+              <span className="btn btn-danger"><a href="https://buy.stripe.com/eVaeYeh1PeCod0c6oo" className="text-decoration-none text-white"> Make a Payment </a></span>
             </div>
           </div>
         </div>

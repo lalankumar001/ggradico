@@ -13,66 +13,10 @@ const Blog = () => {
           <div>
           <img src={BlogImg} alt="img" width='100%' />
          </div> 
-         <h1 className="Open_Vacance_Heading container w-75 text-center text-light fw-bold p-1 bg-dark rounded">
-         <span><img src={BlogImg01} alt="img" width='100%' className='rounded'/></span>
-        </h1>
-<br />
+<br />  
 <h1 className='text-dark text-center p-4'>Our<span className='text-decoration-underline fw-bold'> Blog</span></h1>
 <div className='container p-5 shadow'>
-   <div className='row'>
-         <div className='col'>
-         <div className="card">
-            <img src={BlogImg01} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-         </div>         
-         <div className='col'>
-         <div className="card">
-            <img src={BlogImg01} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-         </div>
-
-         <div className='col'>
-         <div className="card">
-            <img src={BlogImg01} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-         </div>
-   </div>
-   <div className='row mt-4'>
-    <div className="col">
-    <div className="card">
-            <img src={BlogImg01} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-    </div>
-
-    <div className="col">
-    <div className="card">
-            <img src={BlogImg01} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-    </div>
-    <div className="col">
-    <div className="card">
-            <img src={BlogImg01} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-    </div>
-   </div>
+<h1 className='text-center'>Comming Soon</h1>
 </div>
 <br />
 {/* Contact us page */}
